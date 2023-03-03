@@ -653,3 +653,156 @@ form input[type="submit"]:hover {
 
 
 
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+   #content {
+      padding: 0;
+      margin: 22px 0 0;
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .bannier-header {
+      display: block;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+   }
+
+   .bannier-header>a {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 53px;
+   }
+
+   .bannier-header ul {
+      margin: 0;
+      gap: 0;
+   }
+
+   .bannier-header ul li {
+      width: 50%;
+   }
+
+   .bannier-header ul a:hover {
+      border-bottom: 3px #0065FC solid;
+      border-top: none;
+      padding: 0 50% 25px;
+      color: #0065FC;
+      font-weight: 500;
+      transform: none;
+   }
+
+   h1,
+   header h2,
+   form,
+   header h3,
+   .bannier-filtres {
+      margin-left: 22px;
+      margin-right: 22px;
+   }
+
+   form input[type="submit"] {
+      display: none;
+      position: absolute;
+   }
+
+   header form .icone-search {
+      color: #fff;
+      font-size: 1.8em;
+      background: #0065FC;
+      text-align: center;
+      padding: 10px 20px;
+      width: max-content;
+      border-radius: 0 15px 15px 0;
+      display: unset;
+   }
+
+   form {
+      width: 80%;
+      grid-template-columns: 0.3fr 3fr 1fr;
+   }
+
+   .bannier-filtres {
+      gap: 15px;
+      flex-direction: column;
+   }
+
+   .bannier-filtres ul {
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: auto;
+      width: 100%;
+      max-width: 80%;
+   }
+
+   .bannier-filtres li {
+      width: 100%;
+      padding: 25px 15px;
+   }
+
+   main {
+      flex-direction: column-reverse;
+      margin: 0;
+      gap: 0;
+   }
+
+   #populaire-content {
+      padding: 40px;
+   }
+
+   #most-visited {
+      flex-direction: column;
+   }
+
+   #most-visited article img {
+      width: 300px;
+      height: 280px;
+   }
+
+   #most-visited article h3 {
+      font-size: 16px;
+   }
+
+   #most-visited article p {
+      font-size: 14px;
+   }
+   #articles-hebergement article img{
+      height: 280px;
+   }
+   #hebergements {
+      background: #fff;
+      padding: 40px;
+   }
+
+   #articles-hebergement {
+      grid-template-columns: 1fr;
+   }
+
+   #hebergements h2:nth-last-child(1) {
+      display: none;
+   }
+
+   .marseille {
+      flex-direction: column;
+      padding: 40px;
+   }
+
+   #activites h2 {
+      padding: 0 40px 0;
+   }
+
+   .marseille article {
+      width: 100%;
+   }
+
+   footer {
+      flex-direction: column;
+   }
+
+   .loader {
+      display: none;
+   }
+
+}
